@@ -11,9 +11,8 @@
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
   <link rel="stylesheet" href="./style.css">
   <script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script>
-
-  <!-- Update title and description for a birthday theme -->
-  <title>HBD 5.0 | Isha Arora</title>
+  <title>🎉 Happy Birthday, Piu! 🎂💖</title>
+  <meta name="description" content="Wishing the sweetest soul, Piu, a day full of smiles, love, and unforgettable memories. Happy Birthday! 🎊💝">
   <link rel="icon" type="image/x-icon" href="https://www.palingit.com/favicon.ico" />
   <meta name="description" content="A special birthday greeting" />
 </head>
@@ -49,35 +48,36 @@
     <p id="halo" class="halo"></p>
 
     <div>
-      <blockquote id="bq" data-text="💞">
-        <!-- Update the messages for a birthday greeting -->
+      <blockquote id="bq" data-text="💖">
+        <!-- Birthday greeting for Piu -->
         <p id="kalimat">
-          Hey handsome🫰🥰 Happy Birthday, Bala ji always bless you, ! Today is all about celebrating you.
+          Happy Birthday, Piu! 💐🌟 Today the world shines a little brighter because it’s the day you born. You’re not just a friend — you’re a beautiful soul who brings happiness wherever you go. 💫
         </p>
-
+    
         <!-- Message -->
-        <p id="pesan1">Tap here for your birthday surprise! 🎉</p>
+        <p id="pesan1">Tap here for a little birthday magic made just for you! 🎉💝</p>
         <div id="kolombaru">
           <li id="lv1">🎂</li>
           <li id="lv2">🎁</li>
-          <li id="lv3">🥳</li>
-          <li id="lv4">💖</li>
+          <li id="lv3">💐</li>
+          <li id="lv4">🌈</li>
         </div>
-
-        <p id="pesan2">You shine brighter every year! ✨</p>
-        <p id="pesan3">Do you know what makes today extra special?</p>
-        <p id="pesan4" class="sty2">It’s your birthday!</p>
+    
+        <p id="pesan2">Every moment with you is filled with light and laughter. ✨</p>
+        <p id="pesan3">But today? Today is extra special. Wanna know why?</p>
+        <p id="pesan4" class="sty2">Because it’s your birthday, Piu! 🥳</p>
         <p id="pesan5" class="sty2">
-          Today, I wish you a year filled with laughter, love, and unforgettable moments.
+          I hope this year brings you the kind of joy that stays in your heart forever — the kind of memories that make you smile for years to come. 🌼
         </p>
         <p id="pesan6" class="sty2">
-          Remember, you deserve every happiness in the world. Celebrate big and enjoy every moment!
+          You deserve a world full of adventures, laughter that never ends, true friendships, cozy sunsets, and every little thing that makes your heart happy. 💖
         </p>
-
+    
         <!-- Next Button -->
-        <p id="opsL">Tap to continue the celebration!</p>
+        <p id="opsL">Tap to keep the celebration flowing, birthday girl! 🎊🌸</p>
       </blockquote>
     </div>
+    
 
     <!-- Send Message Button -->
     <div id="Tombol"><a id="By">&#128140; Next</a></div>
@@ -127,23 +127,12 @@
     };
 
     async function inipesan() {
-      var { value: nama } = await swals.fire({
-        title: "What's your beautiful name?",
-        input: "text",
-      });
-      if (nama && nama.length < 11) {
-        window.nama = nama;
-        vketikhalo = "Happy Birthday, " + nama + "!";
-        mulainama();
-      } else {
-        await Swal.fire({
-          title: "Your name is lovely, but it seems a bit long.",
-          text: "Please enter a shorter name.",
-          icon: "warning",
-        });
-        inipesan();
-      }
-    }
+  const nama = "PIU";
+  window.nama = nama;
+  vketikhalo = "Happy Birthday, " + nama + "!";
+  mulainama();
+}
+
 
     var tanya = "How about we celebrate your birthday in style?";
     var opstanya = "Your choice is:";
